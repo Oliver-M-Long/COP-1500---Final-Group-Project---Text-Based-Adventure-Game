@@ -105,7 +105,7 @@ def rogue_skills():
     print(*skill_list, sep=" | ")
     while True:
         skill_choice = input("Pick your skill:").strip().lower()
-        if skill_choice == "double daggers":
+        if skill_choice == "double daggers" or "double dagger":
             print("You grab your double daggers and dash beneath the dragon, injuring its leg.")
             break
         elif skill_choice == "sneak attack":
@@ -176,13 +176,13 @@ while True:
         print("'He's been on that mountain for at least 500 years. I imagine he's pretty lonely up there...' \n")
         break
 
-    elif location in ["go to the Cedar and Smoke Tavern", "go to the Tavern", "tavern", "go to tavern"]:
+    elif location in ["go to the cedar and smoke tavern", "go to the tavern", "tavern", "go to tavern","cedar and smoke tavern"]:
         print("You walk into a loud bustling tavern. It's a busy time of day. A band of goblins are playing some sea shanties while the bartender pours a brimming glass of ale.\n")
         print("The bartender greets you with a smile and says, 'So, I hear you're the brave new adventurer who is here to fix our city!' \n")
         print("'I will warn you... Any of my patrons who have attempted to slay the dragon never came back... I wish you the best of luck.'\n")
         break
 
-    elif location in ["go to the ocean's potions magic shop", "go to the magic shop", "magic shop", "shop", "go to magic shop"]:
+    elif location in ["go to the ocean's potions magic shop", "go to the magic shop", "magic shop", "shop", "go to magic shop","ocean's potions magic shop"]:
         print("You walk into an old and dusty shop. Rows of ancient looking books line rickety bookshelves. You see scattered notes and half filled potion bottles on a desk in the back of the shop. \n")
         print("A young elven woman with large, round glasses looks up at you. 'Hello and welcome to the Ocean's Potions Magic Shop! I've heard through the grape vine that a young traveler would be in town.' \n")
         print("'I'm afraid that I don't have much in stock right now, but I do have some advice! The dragon seems to be terrified of its own reflection. That's why it never leaves its cave.'\n")
@@ -268,8 +268,8 @@ while True:
                 continue
     if fight_choice_2 == "reason":
         print("You put your weapon down and your hands up.")
-        print("You call out to the dragon and say that you dont want any trouble.")
-        print("Calmly, you ask the dragon to leave the villagers be. The dragon does not look pleased doesn't rush to attack you.")
+        print("You call out to the dragon and say that you don't want any trouble.")
+        print("Calmly, you ask the dragon to leave the villagers be. The dragon does not look pleased but doesn't rush to attack you.")
         while True:
             fight_choice_4 = input("Do you take this chance to keep talking, or do you cast the final blow?:").strip().lower()
             if fight_choice_4 in ["talk","keep talking","reason","talking"]:
@@ -288,4 +288,5 @@ while True:
         story_end()
     else:
         print("Now's not the time to fool around!")
+
         continue
